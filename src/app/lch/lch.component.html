@@ -1,0 +1,19 @@
+<div class="group row">
+  <igx-calendar [vertical]="false" [weekStart]="0" [hasHeader]="true" class="calendar"></igx-calendar>
+  <igx-checkbox labelPosition="after" class="checkbox"></igx-checkbox>
+  <igx-banner class="banner">
+    <igx-icon family="material" class="icon">mail</igx-icon>
+    Banner message
+    <igx-banner-actions>
+      <button igxButton="flat" igxRipple class="button">Button</button>
+    </igx-banner-actions>
+  </igx-banner>
+  <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" message="Are you sure you want to do this?" leftButtonLabel="Cancel" rightButtonLabel="OK" (leftButtonSelect)="dialog.toggle()" (rightButtonSelect)="dialog.toggle()" #dialog class="dialog">
+    <igx-dialog-title>
+      <h5>Confirmation</h5>
+    </igx-dialog-title>
+  </igx-dialog>
+  <igx-input-group type="border" class="igx-typography__body-1 textarea">
+    <label igxLabel>Label/Placeholder</label>
+  </igx-input-group>
+</div>

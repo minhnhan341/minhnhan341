@@ -3,35 +3,42 @@ import { BrowserModule, HammerModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ChatComponent } from './chat/chat.component';
-import { IgxInputGroupModule, IgxTabsModule, IgxIconModule, IgxButtonModule, IgxRippleModule, IgxRadioModule, IgxSelectModule, IgxAvatarModule, IgxNavbarModule, IgxToggleModule, IgxNavigationDrawerModule } from 'igniteui-angular';
+import { LchComponent } from './lch/lch.component';
+import { IgxCalendarModule, IgxCheckboxModule, IgxBannerModule, IgxIconModule, IgxButtonModule, IgxRippleModule, IgxDialogModule, IgxToggleModule, IgxInputGroupModule, IgxTabsModule, IgxRadioModule, IgxSelectModule, IgxAvatarModule, IgxSliderModule, IgxNavbarModule, IgxNavigationDrawerModule } from 'igniteui-angular';
 import { FormsModule } from '@angular/forms';
 import { View2Component } from './view2/view2.component';
 import { View3Component } from './view3/view3.component';
+import { NgDngComponent } from './ng-dng/ng-dng.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChatComponent,
+    LchComponent,
     View2Component,
-    View3Component
+    View3Component,
+    NgDngComponent
   ],
   imports: [
     BrowserModule,
     HammerModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    IgxInputGroupModule,
-    FormsModule,
-    IgxTabsModule,
+    IgxCalendarModule,
+    IgxCheckboxModule,
+    IgxBannerModule,
     IgxIconModule,
     IgxButtonModule,
     IgxRippleModule,
+    IgxDialogModule,
+    IgxToggleModule,
+    IgxInputGroupModule,
+    FormsModule,
+    IgxTabsModule,
     IgxRadioModule,
     IgxSelectModule,
     IgxAvatarModule,
+    IgxSliderModule,
     IgxNavbarModule,
-    IgxToggleModule,
     IgxNavigationDrawerModule
   ],
   providers: [],

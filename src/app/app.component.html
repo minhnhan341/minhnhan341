@@ -11,10 +11,10 @@
 <div class="group row">
   <igx-nav-drawer [isOpen]="true" width="320px" [pin]="true" [pinThreshold]="1024" #navDrawer class="nav-drawer">
     <ng-template igxDrawer>
-      <span [isHeader]="true" [active]="false" igxDrawerItem routerLink="/chat" class="nav-drawer-item">
+      <span [isHeader]="true" [active]="false" igxDrawerItem routerLink="/lch" class="nav-drawer-item">
         <span class="span">Lượt xem trong ứng dụng này</span>
       </span>
-      <span [isHeader]="false" [active]="false" igxDrawerItem routerLink="/chat" class="nav-drawer-item">
+      <span [isHeader]="false" [active]="false" igxDrawerItem routerLink="/lch" class="nav-drawer-item">
         <igx-icon family="material" class="icon">home</igx-icon>
         <span class="span">Trang chủ</span>
       </span>
@@ -32,7 +32,7 @@
     <router-outlet></router-outlet>
   </div>
   <igx-tabs [selectedIndex]="0" [disableAnimation]="true" tabAlignment="start" class="tab-layout">
-    <igx-tab-item [disabled]="true" class="tab">
+    <igx-tab-item class="tab">
       <igx-tab-content class="tab-content row">
         <h5 class="h5">Qua trang này</h5>
         <a target="_blank" class="igx-typography__body-1 hyperlink">This is a link</a>
