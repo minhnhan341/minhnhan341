@@ -1,0 +1,33 @@
+<div class="group row">
+  <igx-tabs [selectedIndex]="0" [disableAnimation]="true" tabAlignment="start" class="tab-layout">
+    <igx-tab-item class="tab">
+      <igx-tab-header>
+        <igx-icon igxTabHeaderIcon>filter_list</igx-icon>
+        <span igxTabHeaderLabel>Chat nhóm</span>
+      </igx-tab-header>
+      <igx-tab-content class="tab-content row">
+        <igx-input-group type="border" class="input">
+          <input type="text" igxInput />
+          <label igxLabel>Nhập gì đó cho nhóm của bạn...</label>
+        </igx-input-group>
+        <button igxButton="icon" igxRipple>
+          <igx-icon>email</igx-icon>
+        </button>
+        <igx-radio-group class="radio-group">
+          <igx-radio class="radio">Radio</igx-radio>
+        </igx-radio-group>
+        <igx-select type="border" class="select">
+          <igx-select-item value="Trang chủ" [disabled]="true">Trang chủ</igx-select-item>
+        </igx-select>
+      </igx-tab-content>
+    </igx-tab-item>
+    <igx-tab-item class="tab">
+      <igx-tab-content class="tab-content row"></igx-tab-content>
+      <igx-tab-header>
+        <igx-icon igxTabHeaderIcon>account_circle</igx-icon>
+        <span igxTabHeaderLabel>Chat riêng</span>
+      </igx-tab-header>
+    </igx-tab-item>
+  </igx-tabs>
+  <igx-avatar icon="people" [roundShape]="true" size="small" class="avatar"></igx-avatar>
+</div>
