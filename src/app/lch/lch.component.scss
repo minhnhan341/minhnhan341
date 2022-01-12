@@ -12,9 +12,15 @@
   flex-grow: 1;
   flex-basis: 0;
 }
-.banner {
-  height: max-content;
+.textarea {
   min-width: min-content;
+  width: 246px;
+  height: max-content;
+  flex-shrink: 0;
+}
+.calendar {
+  width: 731px;
+  height: max-content;
   flex-shrink: 0;
 }
 .icon {
@@ -22,15 +28,22 @@
   height: 24px;
   font-size: 24px;
 }
+.checkbox {
+  width: max-content;
+  height: max-content;
+}
 .button {
   min-width: min-content;
   height: max-content;
 }
-.slider {
-  min-width: 50px;
-  flex-grow: 1;
-  flex-shrink: 0;
+.banner {
   height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.dialog {
+  min-width: 0;
+  min-height: 0;
 }
 .row {
   display: flex;

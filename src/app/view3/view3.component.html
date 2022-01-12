@@ -1,3 +1,10 @@
 <div class="group row">
-  <h4 class="h4">View 3 content</h4>
+  <igx-banner class="banner">
+    <igx-icon family="material" class="icon">mail</igx-icon>
+    Banner message
+    <igx-banner-actions>
+      <button igxButton="flat" igxRipple class="button">Xem</button>
+    </igx-banner-actions>
+  </igx-banner>
+  <igx-slider [value]="0" type="slider" [continuous]="true" tickLabelsOrientation="horizontal" [minValue]="0" [maxValue]="100" class="slider"></igx-slider>
 </div>
